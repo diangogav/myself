@@ -1,0 +1,157 @@
+/* Avatar Styles */
+.hero-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.avatar-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+
+.avatar-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.4) 0%, rgba(147, 51, 234, 0.3) 50%, transparent 70%);
+    filter: blur(30px);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.avatar-circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(26, 31, 58, 0.95) 0%, rgba(15, 23, 41, 0.9) 100%);
+    background-image: url('/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.avatar-circle::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, #00e5ff, #9333ea, #ec4899, #f59e0b);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: rotate-border 4s linear infinite;
+}
+
+@keyframes rotate-border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.avatar-circle::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(147, 51, 234, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.avatar-circle:hover::after {
+    opacity: 1;
+}
+
+.avatar-initials {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #00e5ff 0%, #5de0e6 25%, #9333ea 75%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 2;
+    user-select: none;
+    filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.5));
+    display: none;
+    /* Hidden when using real photo */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .avatar-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .avatar-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .avatar-glow {
+        width: 160px;
+        height: 160px;
+    }
+
+    .avatar-initials {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .avatar-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .avatar-glow {
+        width: 140px;
+        height: 140px;
+    }
+
+    .avatar-initials {
+        font-size: 2.5rem;
+    }
+}
+
+/* Note: To replace with actual photo, add this to .avatar-circle:
+   background-image: url('/path/to/your/photo.jpg');
+   background-size: cover;
+   background-position: center;
+   And hide .avatar-initials
+*/
