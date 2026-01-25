@@ -395,7 +395,7 @@ async function generateCV() {
             <h3 class="section-title">Educación</h3>
              <div class="experience-item">
                 <div class="exp-role" style="font-size: 0.95rem">Ingeniería en Sistemas</div>
-                <div class="exp-company" style="font-size: 0.9rem; font-weight: 400">Universidad de Oriente</div>
+                <div class="exp-company" style="font-size: 0.9rem; font-weight: 400">UNEXPO 2013 - 2019</div>
              </div>
           </section>
 
