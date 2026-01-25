@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import './Skills.css';
 
 interface SkillCategory {
