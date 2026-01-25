@@ -229,7 +229,7 @@ async function generateCV() {
       <div class="header">
         <div class="header-content">
           <h1>Diango Gavidia</h1>
-          <h2>Ingeniero en Sistemas</h2>
+          <h2>Ingeniero de Sistemas</h2>
         </div>
         <div class="contact-info">
           <a href="mailto:diangogavidia@gmail.com" class="contact-item">diangogavidia@gmail.com</a>

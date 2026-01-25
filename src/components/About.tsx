@@ -9,7 +9,7 @@ const About = () => {
                     <div className="about-card glass-card">
                         <div className="about-text">
                             <p className="about-description">
-                                Ingeniero en Sistemas con experiencia en desarrollo backend y DevOps.
+                                Ingeniero de Sistemas con experiencia en desarrollo backend y DevOps.
                                 Me especializo en arquitectura de software, escalabilidad y diseño de sistemas robustos
                                 utilizando patrones como arquitectura hexagonal y principios de código limpio.
                             </p>

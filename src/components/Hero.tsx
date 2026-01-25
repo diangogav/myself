@@ -47,7 +47,7 @@ const Hero = () => {
                         <span className="greeting">Hola, soy</span>
                         <span className="name">Diango Gavidia</span>
                     </h1>
-                    <p className="hero-subtitle">Ingeniero en Sistemas</p>
+                    <p className="hero-subtitle">Ingeniero de Sistemas</p>
                     <p className="hero-description">
                         Especializado en desarrollo backend, arquitectura de sistemas y DevOps.
                         Apasionado por crear soluciones escalables y eficientes en tiempo real.
