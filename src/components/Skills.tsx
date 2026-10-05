@@ -48,7 +48,7 @@ const skillCategories: SkillCategory[] = [
                 <line x1="12" y1="22.08" x2="12" y2="12" />
             </svg>
         ),
-        skills: ['Git', 'Nest.js', 'Lua', 'Godot']
+        skills: ['Git', 'Nest.js', 'Lua']
     }
 ];
 

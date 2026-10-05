@@ -9,19 +9,12 @@ interface InProgressProject {
     image?: string;
 }
 
-const inProgressProjects: InProgressProject[] = [
-    {
-        title: 'Yu-Gi-Oh! Godot Client',
-        description: 'Cliente de juego multiplayer para Yu-Gi-Oh! desarrollado en Godot Engine. Incluye renderizado 3D de cartas, animaciones de batalla, efectos visuales y conexión en tiempo real con el servidor Evolution.',
-        technologies: ['Godot', 'GDScript', 'C++', '3D Graphics', 'WebSockets', 'Networking'],
-        status: 'En desarrollo activo',
-        github: 'https://github.com/diangogav',
-        image: '/projects/evolution-game.png'
-    }
-    // Agrega más proyectos en desarrollo aquí
-];
+// Intentionally empty: the section is hidden while there are no projects in progress.
+const inProgressProjects: InProgressProject[] = [];
 
 const InProgress = () => {
+    if (inProgressProjects.length === 0) return null;
+
     return (
         <section id="in-progress" className="in-progress">
             <div className="container">

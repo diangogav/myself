@@ -11,15 +11,16 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
     {
-        title: 'Líder de Proyecto / Backend / DevOps',
+        title: 'Líder de Proyecto / Full Stack / DevOps',
         company: 'Evolution (Open Source)',
         date: 'May 2023 - Presente',
         description: [
-            'Proyecto open source para crear un servidor más escalable para Yu-Gi-Oh! (EDOPro/Koishi Pro), mejorando la experiencia con reconexión de jugadores a partidas en curso y ranking automático.',
-            'Server TCP, para manejo de partidas en tiempo real con múltiples jugadores.',
-            'API para el manejo de usuarios, autenticación, ranking y estadísticas.',
+            'Lidero una plataforma para jugar Yu-Gi-Oh! en línea, con servidor open source, reconexión a duelos en curso y ranking automático.',
+            'Cliente web (evoduel.com) con Svelte 5 y TypeScript, arquitectura hexagonal y protocolo binario de EDOPro sobre WebSocket; versión 1.1.0 publicada.',
+            'Servidor en tiempo real (Node.js, TCP y WebSocket) con salas, emparejamiento, reconexión y ranking Elo, compatible con los clientes EDOPro, Koishi y YGO Mobile.',
+            'API para el manejo de usuarios, autenticación, ranking y estadísticas con Bun, Elysia y PostgreSQL.',
         ],
-        technologies: ['Node.js', 'TypeScript', 'C++', 'PostgreSQL', 'Redis', 'Svelte']
+        technologies: ['TypeScript', 'Node.js', 'Svelte', 'PostgreSQL', 'Redis', 'Docker', 'WebSockets']
     },
     {
         title: 'Desarrollador Backend',
