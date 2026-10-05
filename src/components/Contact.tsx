@@ -13,7 +13,7 @@ const Contact = () => {
                             No dudes en contactarme.
                         </p>
                         <div className="contact-methods">
-                            <a href="mailto:djangodev@gmail.com" className="contact-method">
+                            <a href="mailto:diangogavidia@gmail.com" className="contact-method">
                                 <div className="contact-method-icon">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
