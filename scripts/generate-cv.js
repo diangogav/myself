@@ -195,11 +195,19 @@ async function generateCV() {
 
         /* Projects */
         .project-item {
-          margin-bottom: 0.8rem;
+          margin-bottom: 0.6rem;
           background: #f9fafb;
-          padding: 0.8rem;
+          padding: 0.6rem 0.8rem;
           border-radius: 6px;
           border-left: 3px solid var(--primary);
+        }
+
+        .project-item:last-child {
+          margin-bottom: 0;
+        }
+
+        section:last-child {
+          margin-bottom: 0;
         }
 
         .proj-title {
@@ -214,6 +222,19 @@ async function generateCV() {
           color: #4b5563;
           margin-bottom: 0;
           line-height: 1.4;
+        }
+
+        .proj-links {
+          font-size: 0.75rem;
+          overflow-wrap: anywhere;
+          margin-top: 0.2rem;
+          color: var(--text-light);
+        }
+
+        .proj-links a {
+          color: var(--secondary);
+          text-decoration: none;
+          font-weight: 500;
         }
 
         .summary-text {
@@ -234,7 +255,7 @@ async function generateCV() {
         <div class="contact-info">
           <a href="mailto:diangogavidia@gmail.com" class="contact-item">diangogavidia@gmail.com</a>
           <span class="contact-item">+58 412-4302456</span>
-          <span class="contact-item">github.com/diangogav</span>
+          <a href="https://github.com/diangogav" class="contact-item">github.com/diangogav</a>
           <span class="contact-item">Venezuela</span>
         </div>
       </div>
@@ -273,14 +294,16 @@ async function generateCV() {
             <div class="experience-item">
               <div class="exp-header">
                 <div>
-                  <div class="exp-role">Líder de Proyecto / DevOps</div>
+                  <div class="exp-role">Líder de Proyecto / Full Stack / DevOps</div>
                   <div class="exp-company">Evolution (Open Source)</div>
                 </div>
                 <div class="exp-date">May 2023 - Presente</div>
               </div>
               <ul class="exp-desc">
-                <li>Proyecto open source para servidor Yu-Gi-Oh! escalable.</li>
-                <li>Implementación de Server TCP para partidas en tiempo real.</li>
+                <li>Lidero una plataforma para jugar Yu-Gi-Oh! en línea, con servidor open source.</li>
+                <li>Cliente web (Svelte 5, TypeScript) con arquitectura hexagonal; v1.1.0 publicada.</li>
+                <li>Servidor en tiempo real (Node.js) con salas, reconexión y ranking Elo.</li>
+                <li>API de usuarios, autenticación y ranking (Bun, Elysia, PostgreSQL).</li>
               </ul>
             </div>
 
@@ -328,17 +351,6 @@ async function generateCV() {
 
           </section>
 
-          <section>
-            <h3 class="section-title">Proyectos Destacados</h3>
-            <div class="project-item">
-              <div class="proj-title">Evolution YGO</div>
-              <p class="proj-desc">
-                Servidor open source de alto rendimiento con Arquitectura Hexagonal. 
-                Ranking ELO, matchmaking en tiempo real y gestión de salas.
-                Tech: TypeScript, Node.js, Fastify, Redis, Docker.
-              </p>
-            </div>
-          </section>
 
         </div>
 
@@ -397,6 +409,29 @@ async function generateCV() {
                 <div class="exp-role" style="font-size: 0.95rem">Ingeniería en Sistemas</div>
                 <div class="exp-company" style="font-size: 0.9rem; font-weight: 400">UNEXPO 2013 - 2019</div>
              </div>
+          </section>
+
+          <section>
+            <h3 class="section-title">Proyectos Destacados</h3>
+            <div class="project-item">
+              <div class="proj-title">Evolution Duel</div>
+              <p class="proj-desc">
+                Cliente web de duelos con ranking Elo, modo espectador y constructor de mazos.
+                Tech: Svelte 5, TypeScript, Vite, WebSocket.
+              </p>
+              <p class="proj-links"><a href="https://evoduel.com/">evoduel.com</a></p>
+            </div>
+            <div class="project-item">
+              <div class="proj-title">Evolution YGO</div>
+              <p class="proj-desc">
+                Servidor open source en tiempo real con salas, reconexión y ranking Elo.
+                Tech: Node.js, TypeScript, PostgreSQL, Redis, Docker.
+              </p>
+              <p class="proj-links">
+                <a href="https://evolutionygo.com/">evolutionygo.com</a><br>
+                <a href="https://github.com/diangogav/EDOpro-server-ts">github.com/diangogav/EDOpro-server-ts</a>
+              </p>
+            </div>
           </section>
 
         </div>

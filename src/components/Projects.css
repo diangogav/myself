@@ -187,3 +187,24 @@
         padding: var(--spacing-md);
     }
 }
+
+/* Optional thumbnails under the featured card description */
+.project-gallery {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.project-gallery a {
+    flex: 1;
+    max-width: 160px;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: var(--radius-sm);
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
