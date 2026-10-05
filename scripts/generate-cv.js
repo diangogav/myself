@@ -397,7 +397,6 @@ async function generateCV() {
               <div class="skill-tags">
                 <span class="skill-tag">Git</span>
                 <span class="skill-tag">Nest.js</span>
-                <span class="skill-tag">Godot</span>
                 <span class="skill-tag">Clean Arch</span>
               </div>
             </div>
